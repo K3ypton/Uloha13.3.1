@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ts">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./javascript.js"></script>
+    <style>
+
+       
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding-top: 40px;
+            width: 75%;
+            margin: auto;
+            background-color: #ffffff;
+            padding-bottom: 80px;
+        }
+
+        form{
+            background-color: #3d3d3d;
+            width: 50%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 50px;
+
+        }
+        
+        input{
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input:last-of-type{
+            margin-bottom: 30px;
+        }
+
+        button{
+            width: 230px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            padding: 7px;
+            font-weight: bold;
+            background-color: #4d20ae;
+            padding: 10px;
+            border-radius: 15px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            border: 2px solid #4d20ae;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="#">
+            <label for="meno"style="color:white">Názov filmu</label>
+            <input type="meno" id="meno">
+
+            <label for="rok" style="color:white">Rok vydania</label>
+            <input type="rok" id="rok">
+
+            <label for="herec" style="color:white">Herci</label>
+            <input type="herec" id="herec">
+
+            <button onclick="addFilmy(event)">Vložiť</button>
+            <button onclick="delPoslednyFilm(event)">Odstrániť posledný záznam</button>
+            <button onclick="delVsetkyFilmy(event)">Vymazať celý záznam</button>
+        </form>
+
+        <div id="demo">
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>
